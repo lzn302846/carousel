@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0;margin: 0;}
+        ul{list-style: none;}
+        img{display: block;}
+        body{background-image: linear-gradient(to right,#021330,#243b6c,#021330);}
+        .box{width: 600px;height: 300px;margin: 200px auto;perspective: 700px;perspective-origin: top;}
+        .box ul{width: 200px;height: 200px;position: relative;margin: 100px auto;transform-style: preserve-3d;transition: 2.5s;}
+        .box ul li{width: 100%;height: 100%;position: absolute;left: 0;top: 0;}
+        .box ul li:nth-child(1){transform: rotateY(0) translateZ(300px);-webkit-box-reflect: below 0px linear-gradient(rgba(255,255,255,0) 75%,rgba(255,255,255,0.3))}
+        .box ul li:nth-child(2){transform: rotateY(60deg) translateZ(300px);-webkit-box-reflect: below 0px linear-gradient(rgba(255,255,255,0) 75%,rgba(255,255,255,0.3))}
+        .box ul li:nth-child(3){transform: rotateY(120deg) translateZ(300px);-webkit-box-reflect: below 0px linear-gradient(rgba(255,255,255,0) 75%,rgba(255,255,255,0.3))}
+        .box ul li:nth-child(4){transform: rotateY(180deg) translateZ(300px);-webkit-box-reflect: below 0px linear-gradient(rgba(255,255,255,0) 75%,rgba(255,255,255,0.3))}
+        .box ul li:nth-child(5){transform: rotateY(240deg) translateZ(300px);-webkit-box-reflect: below 0px linear-gradient(rgba(255,255,255,0) 75%,rgba(255,255,255,0.3))}
+        .box ul li:nth-child(6){transform: rotateY(300deg) translateZ(300px);-webkit-box-reflect: below 0px linear-gradient(rgba(255,255,255,0) 75%,rgba(255,255,255,0.3))}
+
+        .box:hover ul{transform: rotateY(360deg);transition: 2.5s;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li><img src="../风景图片/风景2.jpg" alt=""></li>
+            <li><img src="../风景图片/风景2.jpg" alt=""></li>
+            <li><img src="../风景图片/风景3.jpg" alt=""></li>
+            <li><img src="../风景图片/风景4.jpg" alt=""></li>
+            <li><img src="../风景图片/风景5.jpg" alt=""></li>
+            <li><img src="../风景图片/风景4.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>
